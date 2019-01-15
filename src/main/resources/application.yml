@@ -1,0 +1,21 @@
+# Tomcat
+server:
+  port: 8888
+  servlet:
+    context-path: /mx
+
+spring:
+  datasource:
+    name: mysql_test
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://122.113.5.238:3306/zhnyDb?allowMultiQueries=true
+    username: zhnyUser
+    password: zhny123456
+    driverClassName: com.mysql.jdbc.Driver
+
+mybatis-plus:
+  mapper-locations: classpath:/com/mx/**/mapper/mapping/*.xml
+  type-aliases-package: com.mx.demo.model
+  global-config:
+    db-column-underline: true
+    refresh-mapper: true
