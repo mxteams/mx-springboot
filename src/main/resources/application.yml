@@ -1,8 +1,8 @@
 # Tomcat
 server:
   port: 8888
-  servlet:
-    context-path: /mx
+  #servlet:
+  #  context-path: /mx
 
 spring:
   datasource:
@@ -14,8 +14,11 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
 
 mybatis-plus:
-  mapper-locations: classpath:/com/mx/**/mapper/mapping/*.xml
+  mapper-locations: classpath:/com/mx/*/mapper/*.xml
   type-aliases-package: com.mx.demo.model
   global-config:
     db-column-underline: true
     refresh-mapper: true
+
+log:
+  path: mx-logs

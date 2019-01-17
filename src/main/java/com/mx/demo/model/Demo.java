@@ -15,9 +15,9 @@ public class Demo implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    /**
-     * 主键id
-     */
-    private Long deptId;
+    private String filePath;
+    private String fileName;
+    private String fileType;
+
 
 }

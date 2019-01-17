@@ -8,8 +8,7 @@
             file_path as filePath,
             file_name as fileName,
             file_type as fileType
-        from sys_up_load_file WHERE file_path=#{fileName}
-        limit 10
+        from sys_up_load_file
     </select>
 
 </mapper>

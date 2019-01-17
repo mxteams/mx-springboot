@@ -18,12 +18,13 @@ package com.mx.demo.controller;
 import com.mx.demo.model.Demo;
 import com.mx.demo.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/demo")
 public class DemoController {
 
@@ -31,7 +32,7 @@ public class DemoController {
     @Autowired
     private DemoService demoService;
 
-    @RequestMapping("")
+    @RequestMapping()
     public String index(String a) {
         return "qqq";
     }
