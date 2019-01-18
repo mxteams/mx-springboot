@@ -2,7 +2,7 @@ package com.mx.demo.model;
 
 import lombok.Data;
 
-import java.io.Serializable;
+        import java.io.Serializable;
 
 /**
  * 字典信息
